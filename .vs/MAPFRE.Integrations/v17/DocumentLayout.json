@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DEV_2024\\MAPFRE\\MAPFRE.Integrations\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54FB1DBD-D4A4-4593-92FA-1CE3D0F1774E}|MAPFRE.Integrations.SSFF\\MAPFRE.Integrations.SSFF.csproj|c:\\dev_2024\\mapfre\\mapfre.integrations\\mapfre.integrations.ssff\\getlearningplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54FB1DBD-D4A4-4593-92FA-1CE3D0F1774E}|MAPFRE.Integrations.SSFF\\MAPFRE.Integrations.SSFF.csproj|solutionrelative:mapfre.integrations.ssff\\getlearningplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetLearningPlan.cs",
+              "DocumentMoniker": "C:\\DEV_2024\\MAPFRE\\MAPFRE.Integrations\\MAPFRE.Integrations.SSFF\\GetLearningPlan.cs",
+              "RelativeDocumentMoniker": "MAPFRE.Integrations.SSFF\\GetLearningPlan.cs",
+              "ToolTip": "C:\\DEV_2024\\MAPFRE\\MAPFRE.Integrations\\MAPFRE.Integrations.SSFF\\GetLearningPlan.cs",
+              "RelativeToolTip": "MAPFRE.Integrations.SSFF\\GetLearningPlan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T12:24:21.916Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
