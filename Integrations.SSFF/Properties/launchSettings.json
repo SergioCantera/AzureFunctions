@@ -2,7 +2,7 @@
   "profiles": {
     "SSFFIntegration": {
       "commandName": "Project",
-      "commandLineArgs": "--port NNNN",
+      "commandLineArgs": "--port 1111",
       "launchBrowser": false
     }
   }
