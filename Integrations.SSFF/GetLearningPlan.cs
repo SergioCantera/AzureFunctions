@@ -2,12 +2,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
-using MAPFRE.SSFFIntegration.Helpers;
+using SSFFIntegration.Helpers;
 using System.Text.Json;
 using System.Net.Http.Headers;
-using MAPFRE.LearningPlan.Models;
+using LearningPlan.Models;
 
-namespace MAPFRE.SSFFIntegration
+namespace SSFFIntegration
 {
     public class GetLearningPlan
     {
@@ -33,7 +33,7 @@ namespace MAPFRE.SSFFIntegration
 
                 if (userResponse.IsSuccessStatusCode)
                 {
-                    _logger.LogInformation("Token JWT válido.");
+                    _logger.LogInformation("Token JWT vï¿½lido.");
                     var userData = await userResponse.Content.ReadAsStringAsync();
                     UserModel userObject = JsonSerializer.Deserialize<UserModel>(userData);
 
@@ -53,7 +53,7 @@ namespace MAPFRE.SSFFIntegration
             }
             else
             {
-                return new BadRequestObjectResult("Token JWT no proporcionado en el encabezado Authorization.");
+                return new BadRequestObjectResult("Token JWT haven't provided in Authorization Header.");
             }
         }
 

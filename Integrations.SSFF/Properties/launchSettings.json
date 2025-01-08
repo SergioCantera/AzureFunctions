@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "MAPFRE.SSFFIntegration": {
+    "SSFFIntegration": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7185",
+      "commandLineArgs": "--port NNNN",
       "launchBrowser": false
     }
   }

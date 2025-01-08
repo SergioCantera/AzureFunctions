@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MAPFRE.SSFFIntegration.Models
+namespace SSFFIntegration.Models
 {
     public class LearningPlan
     {

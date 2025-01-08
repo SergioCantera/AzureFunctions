@@ -1,4 +1,4 @@
-﻿using MAPFRE.SSFFIntegration.Models;
+﻿using SSFFIntegration.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace MAPFRE.SSFFIntegration.Helpers
+namespace SSFFIntegration.Helpers
 {
     public static class SSFFHelper
     {
@@ -18,18 +18,18 @@ namespace MAPFRE.SSFFIntegration.Helpers
         {
             using (var client = new HttpClient())
             {
-                string endPointURL = "https://mapfre1.plateau.com/learning/oauth-api/rest/v1/token";
+                string endPointURL = "https://your_domain/learning/oauth-api/rest/v1/token";
 
                 var content = @"{ ""grant_type"":""client_credentials"",
                     ""scope"":{
-                        ""userId"":""7654"",
-                        ""companyId"":""mapfre1"",
+                        ""userId"":""userId"",
+                        ""companyId"":""company1"",
                         ""userType"":""user"",
                         ""resourceType"":""learning_public_api""
                     }
                 }";
 
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", "bWFwZnJlMTo2MDYzZTQ2YTkzZThjNjU4MTE3YzQxZmE3OTdkN2MyN2JkM2QzNTQ0ZjIzNmY4OGIwMDRlYjIxY2EyMTJlNDZj");
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", "Token_for_connecting_ssff");
 
                 var response = await client.PostAsync(endPointURL, new StringContent(content));
 
@@ -49,7 +49,7 @@ namespace MAPFRE.SSFFIntegration.Helpers
         {
             using (var client = new HttpClient())
             {
-                string endPointURL = string.Format("https://mapfre1.plateau.com/learning/odatav4/public/user/learningplan-service/v1/UserTodoLearningItems?$filter=criteria/targetUserID eq '{0}' and criteria/includeDeeplink eq true", targetUserID);
+                string endPointURL = string.Format("https://your_domain/learning/odatav4/public/user/learningplan-service/v1/UserTodoLearningItems?$filter=criteria/targetUserID eq '{0}' and criteria/includeDeeplink eq true", targetUserID);
 
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
